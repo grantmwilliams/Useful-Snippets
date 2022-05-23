@@ -3,7 +3,7 @@ from typing import Any, Callable, Generator, TypeVar
 T = TypeVar("T")
 
 def hash_combine32(h1: T, h2: T) -> T:
-    """ c++ boosts' hash_combine function for 32-bit hash values
+    """ Implementation of std::boost's hash_combine function for 32-bit hash values
     returns a mixed/combined result of the 2 (ideally) 32 bit hashed values
     """
     return h1 ^ (h2 + 0x9e3779b9 + (h1 << 6) + (h1 >> 2))
