@@ -93,12 +93,12 @@ def main() -> None:
         'Col_3': [3.0],
     }
     
-    print("dict_roundrobin1:\n-----------------")
+    print("dict_roundrobin (pairs):\n-----------------")
     print(json.dumps(list(dict_roundrobin(data, orient="pairs")), indent=2))
 
     print()
 
-    print("dict_roundrobin2:\n-----------------")
+    print("dict_roundrobin (records):\n-----------------")
     print(json.dumps(list(dict_roundrobin(data, orient="records")), indent=2))
 
 if __name__ == "__main__":
