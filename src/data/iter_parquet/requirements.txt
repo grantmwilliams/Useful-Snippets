@@ -1,2 +1,0 @@
-pyarrow>=4.0.0
-s3fs
