@@ -1,0 +1,2 @@
+pyarrow>=7.0.0
+smart-open["s3"]==5.1.0
